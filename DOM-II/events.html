@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="Likeme()">Like me</button> -->
+<button>Hover on me</button>
+</body>
+</html>
+
+<script>
+
+//addEventListener("event_name","function_name")
+//addEventListener("onclick","likeMe()")
+
+// 1. shouldn't invoke function 
+// 2. you should remove on 
+
+    // document.querySelector("button").addEventListener("click",Likeme())
+
+    // function Likeme(){
+    //     console.log("someone like me");
+    // }
+
+    document.querySelector("button").addEventListener("mouseenter",myfunction)
+
+        function myfunction(){
+            document.querySelector("button").style.color="red"
+        }
+</script>

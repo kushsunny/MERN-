@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 >IPL Team Name</h1>
+    <p>I am Rohit</p>
+    <p id="msd">I am Dhoni</p>
+    <p>I am Moni</p>
+    <p>I am Roni</p>
+    <p>I am raina</p>
+    <h1>Team is too be strong</h1>
+    
+</body>
+</html>
+
+<script>
+    // use of Querry__Selector 
+    
+    // document.getElementById("team").style.color="teal";
+    // document.querySelector("h1").style.color="teal"
+    // document.querySelector("#msd").style.color="blue"
+
+    // Query Selector will select only 1st element which it matches 
+
+    let pArray=document.querySelectorAll("p");
+    console.log(pArray)
+
+    for(let i=0; i<=pArray.length-1; i++){
+        pArray[i].style.color="blue"
+    }
+
+    let head=document.querySelectorAll("h1"); 
+
+    for(let i=0; i<head.length; i++){
+        head[i].style.color="pink"
+    }
+</script>

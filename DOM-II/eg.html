@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Masai</h1>
+    <h2>Banglore</h2>
+    <p>Vaibhav</p>
+    <h3>Naresh</h3>
+    <div>Ram</div>
+    <p>Vishwahs</p>
+</body>
+</html>
+
+<script>
+    // document.querySelector("p").style.color="red"
+
+let ptags=document.querySelectorAll("p")
+    // for(let i=0; i<ptags.length; i++){
+    //     ptags[i].style.color="green"
+    // }
+// by using forEach 
+
+ptags.forEach((elem)=>{
+    elem.style.color="red"
+})
+</script>
